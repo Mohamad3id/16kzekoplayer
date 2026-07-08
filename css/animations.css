@@ -1,0 +1,25 @@
+/* حركات بسيطة لإعطاء احساس ديناميكي */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.hero .btn-primary {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* تأثير الظهور التدريجي (يمكن استخدامه مع الكلاس .reveal) */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* يمكنك تخصيص الـ delays عبر CSS أو عن طريق إضافة فئات delay-1، delay-2 */
+.delay-1 { transition-delay: 120ms; }
+.delay-2 { transition-delay: 240ms; }
+.delay-3 { transition-delay: 360ms; }
+.delay-4 { transition-delay: 480ms; }
+
+/* تلميحات مرئية */
+.pricing-card:hover { transform-origin: center; }
